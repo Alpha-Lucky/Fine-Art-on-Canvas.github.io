@@ -76,7 +76,7 @@
 }
 
 .leaf {
-    position: absolute;
+    position: fixed;
     width: 50px; /* Установите желаемый размер листа */
     animation: fall linear infinite;
 }
