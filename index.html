@@ -1,133 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css">
 </head>
+<body class="bg-gradient-to-r from-pink-100 to-rose-300 font-montserrat">
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl font-bold text-center text-brown-800">Галерея</h1>
+        </div>
+    </header>
 
-<body>
-  <section class="gallery">
-    <h2 class="title">Art Fine in Canvas </h2><br>
-    <h3><a href="index.html" class="activ_a">Gallery</a> / <a href="contacts.html"> Contacts</a> </h3>
-    <div class="gallery-list">
-      <a href="img/yo110x75.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/yo110x75.jpg" alt="alt">
-      </a>
-      <a href="img/c60x70.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/c60x70.jpg" alt="alt">
-      </a>
-      <a href="img/cns90x60.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/cns90x60.jpg" alt="alt">
-      </a>
-      <a href="img/cp80x90.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/cp80x90.jpg" alt="alt">
-      </a>
-      <a href="img/cr60x70.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/cr60x70.jpg" alt="alt">
-      </a>
-      <a href="img/cv75x55.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/cv75x55.jpg" alt="alt">
-      </a>
-      <a href="img/cvv50x60.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/cvv50x60.jpg" alt="alt">
-      </a>
-      <a href="img/dpv117x75.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/dpv117x75.jpg" alt="alt">
-      </a>
-      <a href="img/fm50x70.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/fm50x70.jpg" alt="alt">
-      </a>
-      <a href="img/kp61x92.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/kp61x92.jpg" alt="alt">
-      </a>
-      <a href="img/mp60x90.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/mp60x90.jpg" alt="alt">
-      </a>
-      <a href="img/nvnh55x74.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/nvnh55x74.jpg" alt="alt">
-      </a>
-      <a href="img/pob75x55.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/pob75x55.jpg" alt="alt">
-      </a>
+    <main class="container mx-auto py-10 px-4">
+        <div id="gallery" class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        <div id="loader" class="flex items-center justify-center h-64">
+            <div class="loader">Загрузка...</div>
+        </div>
+    </main>
 
-      <a href="img/rk63x92.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/rk63x92.jpg" alt="alt">
-      </a>
-      <a href="img/rp100x70.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/rp100x70.jpg" alt="alt">
-      </a>
-      <a href="img/siren60x80.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/siren60x80.jpg" alt="alt">
-      </a>
-      <a href="img/sk74x55.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/sk74x55.jpg" alt="alt">
-      </a>
-      <a href="img/tanec60x90.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/tanec60x90.jpg" alt="alt">
-      </a>
-      <a href="img/tk66x77.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/tk66x77.jpg" alt="alt">
-      </a>
-      <a href="img/vesmuz50x60.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/vesmuz50x60.jpg" alt="alt">
-      </a>
-      <a href="img/vlesu74x55.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/vlesu74x55.jpg" alt="alt">
-      </a>
-      <a href="img/zp75x55.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/zp75x55.jpg" alt="alt">
-      </a>
-      <a href="img/rk55x74.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/rk55x74.jpg" alt="alt">
-      </a>
-      <a href="img/ks98x72.jpg" class="gallery-item">
-        <div class="gallery-item-hover">Посмотреть</div>
-        <img src="img/ks98x72.jpg" alt="alt">
-      </a>
+    <footer class="bg-brown-800 text-white py-4">
+        <div class="container mx-auto text-center" style="padding: 1.69em;">
+            <p>&copy; <a href="https://okmic.github.io/okmic/" class="text-black underline">by Okmic</a> 2025</p>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Modal Image">
     </div>
-  </section>
 
-
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-  <script>
-    $(".gallery-list").magnificPopup({
-      delegate: "a",
-      type: "image",
-      gallery: {
-        enabled: true
-      }
-    });
-  </script>
+    <script src="dist/scripts.js"></script>
+    <script src="dist/leaf.js"></script>
 </body>
-
 </html>
