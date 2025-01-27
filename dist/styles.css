@@ -5,25 +5,6 @@ html {
     min-height: 100vh;
 }
 
-.snowflake {
-    position: fixed;
-    top: -10%;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(0) translateX(0);
-    }
-    100% {
-        transform: translateY(100vh) translateX(50vw);
-    }
-}
 
 ::-webkit-scrollbar {
     width: 12px; 
