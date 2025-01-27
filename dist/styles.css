@@ -6,13 +6,13 @@ html {
 }
 
 .snowflake {
-    position: absolute;
+    position: fixed;
     top: -10%;
     width: 10px;
     height: 10px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
-    pointer-events: none; /* Не позволяет взаимодействовать с элементами под ним */
+    pointer-events: none;
     animation: fall linear infinite;
 }
 
