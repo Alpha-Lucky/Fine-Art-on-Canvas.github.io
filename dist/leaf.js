@@ -16,7 +16,7 @@ function createLeaf() {
 }
 
 function startLeaves() {
-    leavesInterval = setInterval(createLeaf, 1690)
+    leavesInterval = setInterval(createLeaf, 3690)
 }
 
 function stopLeaves() {
