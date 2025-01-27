@@ -3,10 +3,11 @@ let leavesActive = true
 let maxLeaves
 let currentLeavesCount = 0
 let snowflakeCont = 50
+
 function setMaxLeaves() {
     if (window.innerWidth < 850) {
         maxLeaves = 3 
-        snowflakeCont = 50
+        snowflakeCont = 30
     } else {
         maxLeaves = 6.9
         snowflakeCont = 100
@@ -16,7 +17,7 @@ function setMaxLeaves() {
 for (let i = 0; i < snowflakeCont; i++) {
     const snowflake = document.createElement('div')
     snowflake.className = 'snowflake'
-    snowflake.style.left = Math.random() * snowflakeCont + 'vw'
+    snowflake.style.left = Math.random() * 100 + 'vw'
     snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'
     snowflake.style.opacity = Math.random()
     snowflake.style.animationDelay = Math.random() * 5 + 's'
