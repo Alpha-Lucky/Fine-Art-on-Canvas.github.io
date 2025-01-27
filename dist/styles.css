@@ -100,9 +100,9 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-.leaf {
+.falling {
     position: fixed;
-    width: 50px; /* Установите желаемый размер листа */
+    width: 50px;
     animation: fall linear infinite;
 }
 
