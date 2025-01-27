@@ -1,7 +1,15 @@
 let leavesInterval
 let leavesActive = true
-const maxLeaves = 6.9
+let maxLeaves
 let currentLeavesCount = 0
+
+function setMaxLeaves() {
+    if (window.innerWidth < 850) {
+        maxLeaves = 3 
+    } else {
+        maxLeaves = 6.9
+    }
+}
 
 function createLeaf() {
     if (currentLeavesCount < maxLeaves) {
@@ -21,4 +29,7 @@ function createLeaf() {
     }
 }
 
+setMaxLeaves()
 leavesInterval = setInterval(createLeaf, 3690)
+
+window.addEventListener("resize", setMaxLeaves)
