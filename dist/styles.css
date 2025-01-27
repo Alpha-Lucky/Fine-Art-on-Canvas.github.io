@@ -1,3 +1,6 @@
+body {
+    min-height: 100vh;
+}
 .modal {
     display: none;
     position: fixed;
